@@ -26,6 +26,8 @@ jobs:
           cp draft-2/index.html draft-2/review.enc.json draft-2/.nojekyll public/draft-2/
           mkdir -p public/brand-preview
           cp brand-preview/index.html brand-preview/review.enc.json brand-preview/.nojekyll public/brand-preview/
+          mkdir -p public/draft-3
+          cp draft-3/index.html draft-3/review.enc.json draft-3/.nojekyll public/draft-3/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: public
