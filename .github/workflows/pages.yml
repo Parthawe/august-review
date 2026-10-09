@@ -22,6 +22,10 @@ jobs:
         run: |
           mkdir public
           cp index.html review.enc.json .nojekyll public/
+          mkdir -p public/draft-2
+          cp draft-2/index.html draft-2/review.enc.json draft-2/.nojekyll public/draft-2/
+          mkdir -p public/brand-preview
+          cp brand-preview/index.html brand-preview/review.enc.json brand-preview/.nojekyll public/brand-preview/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: public
